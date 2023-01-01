@@ -1,0 +1,20 @@
+{
+  "name": "devapp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/my-element.es.js",
+  "exports": {
+    ".": "./dist/my-element.es.js"
+  },
+  "types": "types/my-element.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc && vite build"
+  }
+}

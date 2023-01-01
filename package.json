@@ -1,0 +1,19 @@
+{
+  "name": "parody",
+  "version": "1.0.0",
+  "description": "parody sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "atlemagnussen",
+  "license": "ISC",
+  "dependencies": {
+    "hybrids": "^8.1.12",
+    "lit": "^2.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.3"
+  }
+}
