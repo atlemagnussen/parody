@@ -7,8 +7,6 @@ const template = html<NameTag>`
   </div>
 
   <div class="body">${x => x.name}</div>
-
-  <div class="footer"></div>
 `
 
 const styles = css`
@@ -54,12 +52,6 @@ const styles = css`
     padding: 32px 8px;
     font-size: 42px;
     font-family: cursive;
-  }
-
-  .footer {
-    height: 16px;
-    background: var(--fill-color);
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
 `
 

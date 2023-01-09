@@ -6,7 +6,7 @@ import { customElement } from "lit/decorators.js"
 @customElement('about-page')
 class AboutPage extends LitElement {
 
-    arr = []
+    arr: number[] = []
 
     /**
      *
@@ -21,7 +21,7 @@ class AboutPage extends LitElement {
         return html`
             <h2>About</h2>
             ${this.arr.map(n => 
-                html`<p>fasdfkhlsakjfhlkasjdfhlkasjfdhlkajsfhlkjsdf</p>`)}
+                html`<p>fasdfkhlsakjfhlkasjdfhlkasjfdhlkajsfhlkjsdf${n}</p>`)}
         `
     }
 }
