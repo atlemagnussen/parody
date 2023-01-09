@@ -2,7 +2,6 @@
 import { LitElement, html } from "lit"
 import { customElement } from "lit/decorators.js"
 
-
 @customElement('home-view')
 class HomePage extends LitElement {
 
@@ -12,7 +11,10 @@ class HomePage extends LitElement {
                 <h1>Vite + Lit</h1>
             </my-element>
             <br>
-            <simple-counter></simple-counter>
+            
+            <simple-counter count="42" text="HybridJS"></simple-counter>
+
+            <name-tag></name-tag>
         `
     }
 }

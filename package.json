@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@appnest/web-router": "^1.4.2",
+    "@microsoft/fast-element": "^1.11.0",
     "hybrids": "^8.1.12",
     "lit": "^2.5.0"
   },

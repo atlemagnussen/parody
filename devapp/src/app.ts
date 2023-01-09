@@ -6,6 +6,7 @@ import HomePage from "./pages/home"
 import "./pages/about"
 import "./my-element"
 import "./test-hybrids"
+import "./fastelement"
 
 customElements.whenDefined("router-slot").then(() => {
     const routerSlot = document.querySelector("router-slot")
