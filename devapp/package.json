@@ -3,18 +3,13 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "main": "dist/app.es.js",
-  "exports": {
-    ".": "./dist/app.es.js"
-  },
-  "types": "types/app.d.ts",
+  "main": "src/app.ts",
   "files": [
-    "dist",
-    "types"
+    "dist"
   ],
   "scripts": {
     "start": "vite",
-    "dev": "vite",
-    "build": "tsc && vite build"
+    "typescript": "tsc --noEmit",
+    "build": "npm run typescript && vite build"
   }
 }
