@@ -1,14 +1,12 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite"
+import path from "path"
+
+const projectRootDir = path.resolve(__dirname)
+const publicPath = path.resolve(projectRootDir, "public")
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    build: {
-        lib: {
-            entry: "src/app.ts",
-            formats: ['es'],
-        },
-        rollupOptions: {
-            external: /^lit/,
-        },
-    },
+    logLevel: "info",
+    root: "src",
+    publicDir: publicPath
 })

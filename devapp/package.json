@@ -11,5 +11,8 @@
     "start": "vite",
     "typescript": "tsc --noEmit",
     "build": "npm run typescript && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
   }
 }

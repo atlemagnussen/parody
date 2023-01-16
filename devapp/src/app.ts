@@ -1,5 +1,9 @@
 
 import "@appnest/web-router"
+
+import "./layout.css"
+import "./global.css"
+
 // import { LitElement, html } from "lit"
 // import { customElement } from "lit/decorators.js"
 import HomePage from "./pages/home"

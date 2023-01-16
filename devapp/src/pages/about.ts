@@ -1,5 +1,5 @@
 
-import { LitElement, html } from "lit"
+import { LitElement, html, css } from "lit"
 import { customElement } from "lit/decorators.js"
 
 
@@ -8,9 +8,13 @@ class AboutPage extends LitElement {
 
     arr: number[] = []
 
-    /**
-     *
-     */
+    static styles = css`
+        :host {
+            display: block;
+            background: grey;
+        }
+    `
+
     constructor() {
         super()
         for (let i = 0; i < 100; i++)
