@@ -24,6 +24,7 @@ class AboutPage extends LitElement {
     render() {
         return html`
             <h2>About</h2>
+            <click-debounce></click-debounce>
             ${this.arr.map(n => 
                 html`<p>fasdfkhlsakjfhlkasjdfhlkasjfdhlkajsfhlkjsdf${n}</p>`)}
         `

@@ -11,6 +11,7 @@ import "./pages/about"
 import "./my-element"
 import "./test-hybrids"
 import "./fastelement"
+import "./clickDebounceTest"
 
 customElements.whenDefined("router-slot").then(() => {
     const routerSlot = document.querySelector("router-slot")

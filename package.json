@@ -13,7 +13,8 @@
     "@microsoft/fast-components": "^2.30.6",
     "@microsoft/fast-element": "^1.11.0",
     "hybrids": "^8.1.12",
-    "lit": "^2.5.0"
+    "lit": "^2.5.0",
+    "rxjs": "^7.8.0"
   },
   "devDependencies": {
     "typescript": "^4.9.4",
