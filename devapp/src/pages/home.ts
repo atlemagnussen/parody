@@ -10,12 +10,15 @@ provideFASTDesignSystem()
 class HomePage extends LitElement {
 
     tabChange(e: any) {
-        console.log(e)
+        // console.log(e)
         let tab = e.detail as HTMLElement
         if (tab.id == "fast") {
             setTimeout(() => {
                 const nameTag = this.shadowRoot?.querySelector("name-tag") as HTMLElement
                 nameTag.removeAttribute("hidden")
+                nameTag.addEventListener("test-event", (e) => {
+                    console.log("test-event", e)
+                })
             }, 500)
         }
         

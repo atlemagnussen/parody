@@ -1,12 +1,12 @@
-import { FASTElement, customElement, attr, html, css } from '@microsoft/fast-element';
+import { FASTElement, customElement, attr, html, css } from "@microsoft/fast-element"
 
 const template = html<NameTag>`
-  <div class="header">
+<div class="header">
     <h3>${x => x.greeting.toUpperCase()}</h3>
     <h4>my name is</h4>
-  </div>
-
-  <div class="body">${x => x.name}</div>
+</div>
+<button @click="${(x, c) => x.btnClick(c.event)}">Button to click</button>
+<div class="body">${x => x.name}</div>
 `
 
 const styles = css`
@@ -55,12 +55,13 @@ const styles = css`
   }
 `
 
-@customElement({
-  name: 'name-tag',
-  template,
-  styles
-})
+@customElement({ name: 'name-tag', template, styles })
 export class NameTag extends FASTElement {
-  @attr greeting = "Hello"
-  name="atle"
+    @attr greeting = "Hello"
+    name = "atle"
+
+    btnClick(e: Event) {
+        console.log(e)
+        this.$emit("test-event", "hello")
+    }
 }
